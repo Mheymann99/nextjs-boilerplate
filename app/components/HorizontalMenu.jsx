@@ -18,7 +18,7 @@ import {
   CSS,
 } from '@dnd-kit/utilities';
 
-import { localFont  } from "next/font/local"
+import localFont from "next/font/local"
 
 const BLMelody = localFont({
   src: "../../public/fonts/BLMelody-SemiBold.otf",
