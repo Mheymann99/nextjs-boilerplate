@@ -28,7 +28,49 @@ body {
   font-family: Inter, sans-serif;
 }
 
+.menu-container{
+  max-width: 100vw;
+}
+.menu-item{
+  height: 36px;
+  text-wrap: nowrap;
+}
 .settings{
   font-family: "BLMelody", "BLMelody Fallback";
   letter-spacing: 0.5px;
+}
+.fade-in{
+  animation: 800ms revealup ease;
+}
+
+@keyframes revealup {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform-origin: bottom;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 300px;
+    transform-origin: bottom;
+  }
+}
+
+.fade-out{
+  animation: 800ms revealdown ease;
+}
+
+@keyframes revealdown {
+  from {
+    opacity: 1;
+    max-height: 300px;
+    transform-origin: bottom;
+  }
+
+  to {
+    opacity: 0;
+    max-height: 0;
+    transform-origin: bottom;
+  }
 }
