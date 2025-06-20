@@ -155,9 +155,7 @@ const HorizontalMenu = () => {
         const itemIndex = menuItems.findIndex(i => i.id === item.id); 
         setMenuItems(prevItems => {
             const newItems = [...prevItems];
-            newItems.splice(itemIndex, 1);
-            newItems.splice(0, 0, item)
-            return newItems;
+            return arrayMove(newItems, itemIndex, 0);
           });   
         }
         break;
